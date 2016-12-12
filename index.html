@@ -1,84 +1,69 @@
 <!DOCTYPE HTML>
-
-
+<html>
 <head>
-
-<title>Home</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-
+    <title>Home</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-
-
 <body>
+<!-- Begin content-->
+<div id="body">
 
-<div id=body>
+<!-- Good [time-of-day] Title-->
+<h1 align="center" id="message"></h1>
+<script type="text/javascript">
+    var d = new Date();
+    var n = d.getHours();
 
-  <h1 align="center" id="message" class="expandUp"></h1>
-      <script type="text/javascript">
-              var d = new Date();
-              var n = d.getHours();
+    if (n >= 22 || n <= 4) {
+      message = "Goodnight";
+    } else if ( n >= 5 && n <= 11 ) {
+      message = "Good Morning";
+    } else if ( n >= 12 && n <= 17 ) {
+      message = "Good Afternoon";
+    } else if ( n >= 18 && n <= 21 ) {
+      message = "Good Evening";
+    }
 
-              if (n >= 22 || n <= 4){
-                      message = "Goodnight";
-              } else if ( n >= 5 && n <= 11 ) {
-                      message = "Good Morning";
-              } else if ( n >= 12 && n <= 17 ) {
-                      message = "Good Afternoon";
-              } else if ( n >= 18 && n <= 21 ) {
-                      message = "Good Evening";
-              }
+    document.getElementById("message").innerHTML = message + ', Sean.';
+</script>
+<hr>
 
-              document.getElementById("message").innerHTML = message;
-      </script>
+<div class="row">
+    <div class="col-md-6">
+        <!-- Media URLs -->
+        <span>self._media = [</span>
+        <br><a class="url" href="https://www.4chan.org/g/" target="_blank">Technology</a>, 
+        <br><a class="url" href="https://www.reddit.com" target="_blank">Front Page</a>,
+        <br><a class="url" href="http://hckrnews.com/" target="_blank">HackerNews</a>,
+        <br><a class="url" href="https://eev.ee/blog/" target="_blank">eev.ee</a>,
+        <br><a class="url" href="https://www.reddit.com/r/learnprogramming/" target="_blank">LearnCoding</a>,
+        <br><a class="url" href="https://www.reddit.com/r/programming/" target="_blank">Programming</a>,
+        <br><a class="url" href="https://phys.org/" target="_blank">Science</a>,
+        <br><a class="url" href="https://www.netflix.com/browse" target="_blank">Netflix</a>,
+        <br><a class="url" href="https://www.youtube.com/" target="_blank">YouTube</a>,
+        <br>]
+    </div>
 
-<span>MEDIA </span>
-<span class=links>
-[ <a href="https://www.4chan.org/g/" target="_blank">Technology</a> /
-<a href="https://www.reddit.com" target="_blank">Front Page</a> /
-<a href="https://www.reddit.com/r/linuxmasterrace/" target="_blank">Linux</a> /
-<a href="https://www.reddit.com/r/android/" target="_blank">Android</a> /
-<a href="http://hckrnews.com/" target="_blank">HackerNews</a> ]
-</span>
-
-<br><br>
-
-<span>ENTERTAINMENT </span>
-<span class=links>
-[ <a href="https://www.netflix.com/browse" target="_blank">Netflix and Chill</a> /
-<a href="http://www.pandora.com/" target="_blank">Pandora</a> /
-<a href="https://www.youtube.com/" target="_blank">YouTube and Yoga</a> /
-<a href="https://play.pokemonshowdown.com/" target="_blank">Pokemon Showdown</a> /
-<a href="http://www.totaljerkface.com/happy_wheels.tjf" target="_blank">Happy Wheels</a> ]
-</span>
-
-<br><br>
-
-<span>SOCIAL </span>
-<span class=links>
-[ <a href='https://twitter.com/DankGoodMorning' target="_blank">Twitter</a> /
-<a href='https://instagram.com' target="_blank">Instagram</a> /
-<a href='https://plus.google.com/' target="_blank">Google+</a> /
-<a href="https://photos.google.com/" target="_blank">Photos</a> ]
-</span>
-
-<br><br>
-
-<span>WORK </span>
-<span class=links>
-[ <a href='https://github.com/kevinarefunny' target="_blank">GitHub</a> /
-<a href="http://pastebin.com/" target="_blank">PasteBin</a> /
-<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a> /
-<a href="https://www.kernel.org/" target="_blank">Kernel</a> /
-<a href="https://blackboard.irsc.edu/" target="_blank">School</a> ]
-</span>
-
-<br><br>
-
+    <div class="col-md-6">
+        <!-- Communication URLs -->
+        <span>self._life = [</span>
+        <br><a class="url" href='https://github.com/seanpianka' target="_blank">GitHub</a>,
+        <br><a class="url" href="https://www.fastmail.com/login/" target="_blank">FastMail</a>,
+        <br><a class="url" href="https://www.my.fsu.edu/group/student/home" target="_blank">School</a>,
+        <br><a class="url" href="https://trello.com/" target="_blank">Trello</a>,
+        <br><a class="url" href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>,
+        <br><a class="url" href="https://superuser.com/" target="_blank">Super User</a>,
+        <br><a class="url" href="https://softwareengineering.stackexchange.com/" target="_blank">Software Engineering</a>,
+        <br><a class="url" href="https://codereview.stackexchange.com/" target="_blank">Code Review</a>,
+        <br><a class="url" href="https://space.stackexchange.com/" target="_blank">Space Exploration</a>,
+        <br>]
+    </div>
 </div>
+<br><br>
 
+<!-- End content-->
+</div>
 </body>
-
 </html>

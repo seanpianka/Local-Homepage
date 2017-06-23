@@ -47,7 +47,7 @@ a.url:before, a.url:after {
 #body {
     position: absolute;
     width: 650px;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%,-50%);
     border: 1px solid #7b889d;

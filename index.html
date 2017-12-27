@@ -1,11 +1,70 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <title>Home</title>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+    @font-face {
+        font-family: arial, ubuntu;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        background: #252a32;
+        color: #3DB5E1  ;
+        font-size: 20pt;
+    }
+
+    a {
+        color: #F8B284 ;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #3DB5E1;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 30pt;
+        font-weight: normal;
+    }
+
+    .links {
+        color: #407C9B  ;
+    }
+
+    a.url {
+        margin-left: 2.5em;
+    }
+    a.url:before, a.url:after {
+        content: '';
+    }
+
+    #body {
+        position: absolute;
+        width: 720px;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border: 1px solid #7b889d;
+        border-radius: 5px;
+        padding: 0px .5em;
+        background: #2b313b;
+    }
+    </style>
 </head>
+
 <body>
 <!-- Begin content-->
 <div id="body">
